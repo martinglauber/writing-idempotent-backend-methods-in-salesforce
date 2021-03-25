@@ -1,0 +1,21 @@
+<template>
+
+<div class="user-name">{userName}</div>
+
+<div class="star-container">
+    <img src={starImage_1} class="star" onclick={handle_1} style={starStyle} />
+    <img src={starImage_2} class="star" onclick={handle_2} style={starStyle} />
+    <img src={starImage_3} class="star" onclick={handle_3} style={starStyle} />
+    <img src={starImage_4} class="star" onclick={handle_4} style={starStyle} />
+    <img src={starImage_5} class="star" onclick={handle_5} style={starStyle} />
+</div>
+
+<textarea if:true={editable} value={comments}></textarea>
+<div if:false={editable} class="comments">{comments}</div>
+
+<button 
+ if:true={editable}
+ onclick={handleSavePressed}
+>Save</button>
+
+</template>

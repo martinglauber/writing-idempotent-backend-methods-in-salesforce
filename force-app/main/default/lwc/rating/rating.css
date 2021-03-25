@@ -1,0 +1,37 @@
+:host
+{
+    width : 100% ;
+}
+
+.user-name
+{
+    width   : 25%  ;
+    display : inline-block ;
+}
+
+.star-container
+{
+    width : 25%  ;
+    display : inline-block ;
+}
+
+.comments
+{
+    width : 50%  ;
+    display : inline-block ;
+}
+
+.star
+{
+    width  : 20%  ;
+    height : 100% ;
+}
+
+/*
+.user-rating
+{
+    width   : 200px ;
+    height  : 40px ;
+    display : inline-block ;
+}
+*/

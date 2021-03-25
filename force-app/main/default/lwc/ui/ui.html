@@ -1,0 +1,63 @@
+<template>
+
+    <h1>{movieTitle}</h1>
+
+    <hr>
+
+    <h2>My Rating</h2>
+
+    <c-stars 
+     class="stars"
+     stars={stars}
+     onstarsselected={handleStarsSelected}
+    ></c-stars>
+
+    <textarea 
+     class="comments"
+     onblur={handleCommentTextChanged}
+    >{comments}</textarea>
+
+    <button
+     onclick={handleSaveClicked_0}
+    >Save 0
+    </button>
+
+    <button
+     onclick={handleSaveClicked_1}
+    >Save 1
+    </button>
+
+    <button
+     onclick={handleSaveClicked_2}
+    >Save 2
+    </button>
+
+    <button
+     onclick={deleteUserRating}
+    >Delete My Rating(s)
+    </button>
+
+    <hr>
+
+    <h2>All Ratings</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="th-user-name">User Name</th>
+                <th class="th-stars">Rating</th>
+                <th class="th-comments">Comments</th>
+            </tr>
+        </thead>
+        <tbody>
+            <template for:each={ratings} for:item='rating'>
+            <tr key={rating.Id}>
+                <td key={rating.Id}>{rating.userName}</td> 
+                <td key={rating.Id}><c-stars stars={rating.stars}></c-stars></td> 
+                <td key={rating.Id}>{rating.comments}</td> 
+            </tr>
+            </template>
+        </tbody>
+    </table>
+
+</template>

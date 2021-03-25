@@ -1,0 +1,62 @@
+:host
+{
+    background-color : white ;
+    display          : block ;
+    width            : 100%  ;
+    height           : 100%  ;
+    padding          : 2em   ;
+}
+
+h1
+{
+    font-size : 2em ;
+}
+
+h2
+{
+    font-size : 1.5em ;
+}
+
+button
+{
+    margin-right : 5em ;
+}
+
+th , td
+{
+    padding : 0.5em ;
+}
+
+.stars
+{
+    width : 25em ;
+    margin-right : 5em ;
+    display : inline-block ;
+}
+
+.comments
+{
+    margin-right : 5em ;
+    vertical-align : bottom ;
+}
+
+table
+{
+    width : unset ;
+}
+
+.th-user-name
+{
+    width : 12em ;
+}
+
+.th-stars
+{
+    width : 8em ;
+}
+
+.th-comments
+{
+    width : 40em ;
+}
+
