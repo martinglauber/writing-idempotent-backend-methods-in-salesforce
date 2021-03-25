@@ -1,6 +1,7 @@
 # writing-idempotent-backend-methods-in-salesforce
 
-This code repository contains a sample salesforce app that was created along with this blog post: [https://http://tython.co/salesforce/apex/2021/03/25/writing-idempotent-backend-methods-in-salesforce.html](https://http://tython.co/salesforce/apex/2021/03/25/writing-idempotent-backend-methods-in-salesforce.html)
+This code repository contains a sample salesforce app that was created along with this blog post:  
+[https://tython.co/salesforce/apex/2021/03/25/writing-idempotent-backend-methods-in-salesforce.html](https://tython.co/salesforce/apex/2021/03/25/writing-idempotent-backend-methods-in-salesforce.html)
 
 The code in the repo is in the Salesforce DX layout. More information on working with sfdx projects can be found here:  
 [https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_source_file_format.htm](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_source_file_format.htm) 
