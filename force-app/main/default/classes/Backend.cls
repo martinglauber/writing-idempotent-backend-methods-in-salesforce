@@ -210,8 +210,9 @@ public with sharing class Backend
 
         // set lock
         String Key = UserId + '-' + movieId ;
-        insert new DatabaseLock__c( Key__c = Key ) ;
-        list<DatabaseLock__c> Lock = [ SELECT Id FROM DatabaseLock__c WHERE Key__c = :Key FOR UPDATE ] ;
+        DatabaseLock__c Lock = new DatabaseLock__c( Key__c = Key ) ;
+        insert Lock ;
+        list<DatabaseLock__c> Locks = [ SELECT Id FROM DatabaseLock__c WHERE Key__c = :Key FOR UPDATE ] ;
 
         delete [ SELECT Id FROM Rating__c WHERE Movie__c = :movieId AND User__c = :UserId ] ;
 
